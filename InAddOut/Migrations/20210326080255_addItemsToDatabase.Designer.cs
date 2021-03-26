@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InAddOut.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210326042213_addItemsToDatabase")]
+    [Migration("20210326080255_addItemsToDatabase")]
     partial class addItemsToDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
