@@ -20,7 +20,7 @@ namespace InAddOut.Migrations
 
             modelBuilder.Entity("InAddOut.Models.Item", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -28,7 +28,7 @@ namespace InAddOut.Migrations
                     b.Property<string>("Borrower")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Items");
                 });
