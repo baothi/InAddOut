@@ -10,6 +10,7 @@ namespace InAddOut.Models
     {
         [Key]
         public int id { get; set; }
+
         public string Borrower { get; set; }
     }
 }
