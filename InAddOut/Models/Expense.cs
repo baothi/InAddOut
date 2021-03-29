@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,5 +20,11 @@ namespace InAddOut.Models
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "Amount must be greater than 0!")]
         public int Amount { get; set; }
+
+        [DisplayName("Expense Type")]
+        [ForeignKey("ExpenseTypeId")]
+        public int ExpenseTypeId { get; set; }
+        
+        public virtual ExpenseType ExpenseType { get; set; }
     }
 }
