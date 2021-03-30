@@ -13,6 +13,6 @@ namespace InAddOut.Models
         [Required]
         public string Name { get; set; }
 
-        public ICollection<Expense> Expenses { get; set; }
+        //public ICollection<Expense> Expenses { get; set; }
     }
 }
